@@ -36,9 +36,9 @@ namespace Clicks_Counter
             int randomInt = RandomHRValue();
             if (counter == randomInt)
             {
-                label1.Text = $"Ти набрала: {counter.ToString()}";
+                label1.Text = $"Набрано балів: {counter.ToString()}";
                 label2.Text = $"Потрібно набрати: {RandomHRValue().ToString()}";
-                MessageBox.Show("Ти перемогла!!! Ти хочеш отримати винагороду?");
+                MessageBox.Show("Перемога!!! Ти хочеш отримати винагороду?");
                 if (MessageBoxButtons.OK == MessageBoxButtons.OK)
                 {
                     System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=jHWKtQHXVJg&ab_channel=AwwAnimals");
@@ -49,12 +49,12 @@ namespace Clicks_Counter
 
             if (counter >= 21)
             {
-                label1.Text = $"Ти набрала: {counter.ToString()}";
+                label1.Text = $"Набрано балів: {counter.ToString()}";
                 label2.Text = $"Потрібно набрати: {RandomHRValue().ToString()}";
                 MessageBox.Show("Ми програли, але це не кінець може спробуємо ще раз?)");
                 counter = 0;
             }
-            label1.Text = $"Ти набрала: {counter.ToString()}";
+            label1.Text = $"Набрано балів: {counter.ToString()}";
             label2.Text = $"Потрібно набрати: {RandomHRValue().ToString()}";
         }
 
@@ -65,7 +65,7 @@ namespace Clicks_Counter
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(@"Привіт Саша)), я створив для тебе гру.
+            MessageBox.Show(@"Привіт, я створив маленьку гру.
 Суть гри набрати відповідну кількість балів, з тою що випадає випадково!");
         }
 
